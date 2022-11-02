@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/" method="post">
+            <h1>Fetch Weather</h1>
+            <p>The fetch weather web app provides up-to-date information on the the current weather conditions in a given area throught the world. <a href="https://sheltered-forest-34135.herokuapp.com/">Contact the Developer.</a></p>
+            <label for="cityName">City Name</label> <br>
+            <input id="cityName" type="text" placeholder="city name" name="cityName" required> <br>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div class="weather">
+            <div class="left">
+                <h3>City:</h3>
+                <h3>Temp:</h3>
+                <h3>Description:</h3>
+                <h3>Lon:</h3>
+                <h3>Lat:</h3>
+            </div>
+            <div class="right">
+                <img src="/image/banner.png" alt="weather icon" id="icon">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
