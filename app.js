@@ -28,6 +28,7 @@ app.post("/", function(req, res){
     if(Number.isNaN(check)){
         //apk key taken from .env
         const apiKey = process.env.API_KEY;
+        console.log(apiKey)
         const units = "metric";
         const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + units;
         https.get(url, function(response){ 
