@@ -64,7 +64,7 @@ app.get('*', function(req, res){
     res.status(404).render("404");
 });
 
-
-app.listen(3000, function(){
-    console.log("Server listening on port 3000");
-});
+const port = process.env.PORT || 9001
+app.listen(port, function(){
+    console.log("Server started");
+});  
