@@ -64,10 +64,12 @@ body .container form input
     border: none;
     padding-left: 4px;
     border: solid 1px teal;
+    outline: none;
 }
 body .container form input::placeholder
 {
     color: teal;
+    outline: none;
 }
 body .container form button
 {
